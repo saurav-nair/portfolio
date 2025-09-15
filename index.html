@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Nair - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container" id="navContainer" role="navigation" aria-label="Main navigation">
+        <div class="hamburger" onclick="toggleNav()" role="button" aria-label="Toggle navigation" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link active" onclick="showSection('home', this)" role="tab" aria-selected="true">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showSection('experience', this)" role="tab" aria-selected="false">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                    </svg>
+                    <span class="nav-text">Experience</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showSection('projects', this)" role="tab" aria-selected="false">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M12 2l-5.5 9h11z M12 22l5.5-9h-11z M3.5 13l4.5-8v16z M20.5 13l-4.5 8v-16z"/>
+                    </svg>
+                    <span class="nav-text">Projects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showSection('skills', this)" role="tab" aria-selected="false">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span class="nav-text">Skills</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showSection('education', this)" role="tab" aria-selected="false">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                    </svg>
+                    <span class="nav-text">Education</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showSection('certifications', this)" role="tab" aria-selected="false">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                    </svg>
+                    <span class="nav-text">Certifications</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="home-header">
+                <div class="profile-img">
+                    <!-- Replace 'path/to/your/image.jpg' with your actual image path -->
+                    <!-- If you have an image, uncomment the line below and add your image path -->
+                    <img src="assets/dp.jpeg" alt="Saurav Nair Profile Picture">
+                    
+                    <!-- This is the fallback initials that show if no image is provided -->
+                    <span>SN</span>
+                </div>
+                <h1>Saurav Nair</h1>
+                <p class="tagline">Regulatory & Quality Professional</p>
+                <div class="contact-info">
+                    <a href="tel:6172384031" class="contact-item">📞 617-238-4031</a>
+                    <a href="mailto:snrsauravnair@gmail.com" class="contact-item">✉️ Email</a>
+                    <a href="https://www.linkedin.com/in/sauravnair98/" class="contact-item" target="_blank">🔗 LinkedIn</a>
+                    <span class="contact-item">📍 Boston, MA</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <h2>About Me</h2>
+                <p>Regulatory and Quality professional with extensive experience in preparing submissions, conducting post-market surveillance, supporting internal audits, and ensuring compliance with FDA 21 CFR Part 820, ISO 13485, and ISO 14971 standards.</p>
+                <br>
+                <p>I specialize in QMS documentation and supporting GCP/GMP compliance for Class II and Class III medical devices. My expertise spans across regulatory strategy, quality engineering, and clinical quality assurance, with a proven track record of maintaining 100% compliance rates and improving operational efficiency.</p>
+                <br>
+                <!-- <p>Currently serving as a Regulatory Affairs Associate at Cytiva, I collaborate with cross-functional teams to resolve post-market customer complaints, address complex regulatory queries, and standardize quality processes across product lines.</p> -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="content-card">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Cytiva, Marlborough, MA</div>
+                            <div>Regulatory Affairs Associate</div>
+                        </div>
+                        <div class="date-range">Oct 2024 – June 2025</div>
+                    </div>
+                    <ul>
+                        <li>Collaborated with Engineering, Quality to resolve >10 Post Market customer complaints about device performance, non-conformity and regulatory compliance in alignment with QMS, and change control process.</li>
+                        <li>Addressed complex >10 regulatory queries regarding conformance to USP 62, BSE/TSE, supplier quality, ISO, GMP, EMA 401 ensuring timely resolution, maintaining 100% compliance for Filtration and Single-Use medical devices.</li>
+                        <li>Improved and standardized change control, PMS, and device validation processes across product lines, helping teams strengthen regulatory documentation like DHF and drive continuous improvement.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Northeastern University, Boston, MA</div>
+                            <div>Clinical Quality Associate</div>
+                        </div>
+                        <div class="date-range">Dec 2023 - Sep 2024</div>
+                    </div>
+                    <ul>
+                        <li>Implemented 10+ SOPs related to device sensor utilization, data collection, and trial compliance, enhancing adherence to quality standards and improving trial efficiency.</li>
+                        <li>Supervised patient safety, data accuracy, and collection at multiple in-lab and on-site trial locations in accordance with IRB-approved regulatory protocols, achieving a 95% success rate.</li>
+                        <li>Analyzed clinical trial data with MATLAB for non-conformance and variance, developed new procedures for collecting patient data on REDCap reducing data capture errors and improving overall data reliability by 20%.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Lumicell, Newton, MA</div>
+                            <div>Quality Engineer</div>
+                        </div>
+                        <div class="date-range">Jul 2023 - Dec 2023</div>
+                    </div>
+                    <ul>
+                        <li>Conducted regulatory gap analyses on 50+ device-related documents (SOPs, DHF, DHR, FMEA, PMA Filing) for PAI and BIMO audits, ensuring 100% compliance with FDA regulations in backroom during the audit.</li>
+                        <li>Performed maintenance and inspection of 20+ lab equipment following 21 CFR 820 process and production controls, sterilization, implementing Installation, Operational & Performance Qualification for new lab equipment.</li>
+                        <li>Refined post-market risk management plan for Lumicell's Class III device by evaluating risks from precedent and comparable products and designing a new hazard matrix to improve safety.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Lupin Pharmaceuticals, Mumbai, India</div>
+                            <div>Marketing Executive</div>
+                        </div>
+                        <div class="date-range">Feb 2020 - Mar 2022</div>
+                    </div>
+                    <ul>
+                        <li>Developed and implemented supply chain strategies for distribution and inventory management for over 1000 retailers, resulting in a 15% improvement in efficiency and quality.</li>
+                        <li>Directed patient support and education programs for over four patients daily using specialized patient support apps, reducing consumer complaints by 20%.</li>
+                        <li>Orchestrated medical marketing strategies according to regulations, managing around $120k monthly sales of Lupin's cardio diabetic products and improving sales processes.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Bharat Serums & Vaccines Ltd, Mumbai, India</div>
+                            <div>Quality Intern</div>
+                        </div>
+                        <div class="date-range">Feb 2020 - Mar 2022</div>
+                    </div>
+                    <ul>
+                        <li>Documented QA processes, including batch manufacturing record maintenance, and implemented SOPs for drug development, production, and packaging.</li>
+                        <li>Collaborated with cross-functional teams to ensure adherence to QMS, resulting in timely issue resolution.</li>
+                        <li>Performed QC tests such as UV & HPLC on Parenteral samples, identifying and analyzing batch problems to ensure quality.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="content-card">
+                <h2>Academic Projects</h2>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Regulatory Strategy & Product Development</h3>
+                        <p><strong>Northeastern University</strong> | Sep 2022 - Dec 2022</p>
+                        <p>Presented about Post marketing strategies of combination product development and marketing by utilizing CFR 21 Part 203. Created and communicated a case study about Product development cycle from filing PMA to Post marketing.</p>
+                        <!-- <a href="#" class="view-report-btn">View Report</a> -->
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Regulatory Affairs Analyst - Purcell</h3>
+                        <p><strong>Purcell</strong> | March - Jun 2024</p>
+                        <p>Established regulatory strategy by writing guidelines, timelines, protocols and prerequisites of a Device & SaMD device launch in accordance with European Standards. Created clinical trial design for phase 1.</p>
+                        <!-- <a href="#" class="view-report-btn">View Report</a> -->
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Regulatory Safety Science</h3>
+                        <p><strong>Northeastern University</strong> | Jan 2023 - Apr 2023</p>
+                        <p>Presented and made an Investigator's Brochure about a hypothetical drug to better understand clinical safety science. Developed a paper about Benefit-Risk Assessment and safety studies.</p>
+                        <!-- <a href="#" class="view-report-btn">View Report</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>Co-curricular Activities</h2>
+                <ul>
+                    <li>Led the College Council as General Secretary at HK College of Pharmacy, managing student technical and cultural activities in 2017-18.</li>
+                    <li>Served as Editor in Chief of IPA-MSB-SF in final year (2018-19) and started its magazine 'Panache'.</li>
+                    <li>Secured 3rd position for College Council in Public Health Organization standings during inter-college festival Rx 2018 by organizing innovative health info campaigns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="content-card">
+                <h2>Technical Skills</h2>
+                
+                <h3>Regulatory Standards & Compliance</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">ISO 13485</span>
+                    <span class="skill-tag">ISO 14971</span>
+                    <span class="skill-tag">ISO 9001</span>
+                    <span class="skill-tag">IEC Standards</span>
+                    <span class="skill-tag">93/42/EEC Medical Devices Directive</span>
+                    <span class="skill-tag">21 CFR Chapter 1</span>
+                    <span class="skill-tag">21 CFR 820</span>
+                    <span class="skill-tag">21 CFR 211</span>
+                </div>
+
+                <h3>Quality Management</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">QMS Documentation</span>
+                    <span class="skill-tag">CAPA</span>
+                    <span class="skill-tag">GLP</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">GMP</span>
+                    <span class="skill-tag">Post-market Surveillance</span>
+                    <span class="skill-tag">Internal Audits</span>
+                </div>
+
+                <h3>Regulatory Submissions</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">510(k)</span>
+                    <span class="skill-tag">De Novo</span>
+                    <span class="skill-tag">PMA</span>
+                    <span class="skill-tag">EMA</span>
+                    <span class="skill-tag">EU Submissions</span>
+                    <span class="skill-tag">PMDA</span>
+                    <span class="skill-tag">TGA</span>
+                    <span class="skill-tag">MEDSAFE</span>
+                </div>
+
+                <h3>Software & Tools</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Microsoft PowerPoint</span>
+                    <span class="skill-tag">Microsoft Excel</span>
+                    <span class="skill-tag">Microsoft Visio</span>
+                    <span class="skill-tag">Minitab</span>
+                    <span class="skill-tag">Arena</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">REDCap</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="content-card">
+                <h2>Education</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">Northeastern University, Boston, MA</div>
+                            <div>M.S in Industrial Pharmacy and Regulatory Affairs</div>
+                        </div>
+                        <div class="date-range">Sep 2022 - Jun 2024</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="company-name">University of Mumbai, Mumbai, India</div>
+                            <div>Bachelor of Pharmacy</div>
+                        </div>
+                        <div class="date-range">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="content-card">
+                <h2>Certifications</h2>
+                
+                <div class="skills-container">
+                    <span class="skill-tag">Six Sigma: Green Belt</span>
+                    <span class="skill-tag">Human Subjects Research – CITI</span>
+                    <span class="skill-tag">Design and Conduct of Clinical Trials</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Navigation toggle
+        function toggleNav() {
+            const navContainer = document.getElementById('navContainer');
+            const mainContent = document.getElementById('mainContent');
+            
+            navContainer.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
+        }
+
+        // Section switching
+        function showSection(sectionId, linkElement) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+
+            // Update active link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            });
+            
+            linkElement.classList.add('active');
+            linkElement.setAttribute('aria-selected', 'true');
+        }
+
+        // Keyboard navigation for hamburger menu
+        document.querySelector('.hamburger').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleNav();
+            }
+        });
+
+        // Keyboard navigation for nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set home as active by default
+            showSection('home', document.querySelector('.nav-link.active'));
+        });
+    </script>
+</body>
+</html>
